@@ -1,0 +1,130 @@
+@font-face{font-family: akrobat-black;src: url(../fonts/akrobat-black.otf);}
+@font-face{font-family: akrobat-light;src: url(../fonts/akrobat-light.otf);}
+@font-face{font-family: akrobat-regular;src: url(../fonts/akrobat-regular.otf);}
+@font-face{font-family: akrobat-bold;src: url(../fonts/akrobat-bold.otf);}
+@font-face{font-family: akrobat-extrabold;src: url(../fonts/akrobat-extrabold.otf);}
+@font-face{font-family: akrobat-extralight;src: url(../fonts/akrobat-extralight.otf);}
+
+
+.ar{font-family: akrobat-regular;}.abold{font-family: akrobat-bold;}
+.al{font-family: akrobat-light;}.ael{font-family: akrobat-extralight;}
+.abl{font-family: akrobat-black;}.aeb{font-family: akrobat-extrabold;}
+.aeb{font-family: akrobat-extrabold;}.georgia{font-family: georgia;}
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+html,
+body {
+    height: 100%;
+}
+.wrapper {
+    height: 100%;
+}
+aside{
+    width: 20%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+main{
+    width: 100%;
+}
+footer{flex: 0 0 auto;}
+.center{text-align: center;}
+.content, header, footer, body{
+    font-family: akrobat-regular;
+    font-size: 18px;
+}
+.row{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.col{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.max900{
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+.max850{
+    width: 100%;
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 1%;
+}
+.max{
+    width: 100%;
+    max-width: 940px;
+    margin: 0 auto;
+}
+.max960{
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+.max1000{
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.max1040{
+    width: 100%;
+    max-width: 1040px;
+    margin: 0 auto;
+    padding: 3% 3% 3% 0;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 1px 1px 8px 3px rgba(0,89,149,.42);
+}
+.max1100{
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+.max960_{
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    padding-top: 1%;
+}
+.max1250{
+    width: 100%;
+    max-width: 1250px;
+    margin: 0 auto;
+}
+ul, ol{
+    margin-top: 0px;
+    margin-bottom: 10px;
+    padding-left: 40px;
+}
+.link{
+    color: blue !important;
+    cursor: pointer;
+    text-decoration: underline;
+    font-size: 18px;
+}
+.link:hover{
+    color: red !important;
+}
+
+.none{display: none;}
+blockquote {padding: 10px 20px;line-height: 22px;}
+blockquote, figure {margin: 0 0 10px;}
+._br{display: none;}
+@media(max-width: 500px){
+    .link{font-size: 16px;}
+    ._br{display: block !important;}
+}
+

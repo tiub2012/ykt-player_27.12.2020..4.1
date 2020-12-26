@@ -1,28 +1,38 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="ykt-wrapper" :style="{height, width}">
+    ykt-player_4.1
+    {{test}}
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import { mapGetters } from "vuex";
 
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
+  data: () => ({
+    height: '',
+    width: ''
+  }),
+  methods:{
+    updateSize() {
+      this.height = `${document.documentElement.clientHeight}px`
+      this.width = `${document.documentElement.clientWidth}px`
+      console.log(this.height, this.width)
+    }
+  },
+  mounted(){
+    this.height = `${document.documentElement.clientHeight}px`
+    this.width = `${document.documentElement.clientWidth}px`
+  },
+  created() {
+    window.addEventListener("resize", this.updateSize);
+  },
+  name: "YKT-PLAYER"
+};
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+#ykt {
+  position: relative;
 }
 </style>
